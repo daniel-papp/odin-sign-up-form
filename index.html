@@ -7,8 +7,40 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
+        <aside class="background">
+            <div class="banner">
+                <img src="./images/nasa-logo.png" alt="nasa-logo" class="banner-logo">
+                <h1 class="banner-text">DEEP SPACE MISSION</h1>
+                <p class="photo-credit">Logo and photo and by <a href="https://www.nasa.gov/" target="_blank">NASA</a> on <a href="https://unsplash.com/photos/dCgbRAQmTQA" target="_blank">Unsplash</a></p>
+            </div>
+        </aside>
+        <main>
+            <p>Volunteer for this totally fake space mission, be part of humaniy's greatest adventure. Achieve your dreams and spend the rest of your life locked in a tiny cabin aboard a spaceship.</p>
+            <p>Sign up<em>now</em> to get started!</p>
+            <p>You know you want to.</p>
+            <form action="?" method="post" id="signup-form">
+                <h2>Let's do this!</h2>
 
+                <legend for="user_firstname">First Name</legend>
+                <input type="text" name="user_firstname" id="user_firstname">
 
+                <legend for="user_lastname">Last Name</legend>
+                <input type="text" name="user_lastname" id="user_lastname">
 
+                <legend for="user_email">E-mail</legend>
+                <input type="email" name="user_email" id="user_email">
+
+                <legend for="user_phone">Phone Number</legend>
+                <input type="tel" name="user_phone" id="user_phone">
+                
+                <legend for="user_password">Password</legend>
+                <input type="password" name="user_password" id="user_password">
+
+                <legend for="user_confirmpassword">Confirm Password</legend>
+                <input type="password" name="user_confirmpassword" id="user_confirmpassword">
+            </form>
+            <button class="signup-btn" form="signup-form">Create Account</button>
+            <p class="already">Already have an account?<a href="#">Log in</a></p>
+        </main>
     </body>
 </html>
