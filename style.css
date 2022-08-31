@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
 
+@font-face {
+    font-family: 'Nasa';
+    src: url('./fonts/nasa-webfont.woff2') format('woff2'),
+         url('./fonts/nasa-webfont.woff') format('woff');
+}
+
 :root {
     --ff-roboto: 'Roboto Mono', Helvetica, sans-serif;
+    --ff-nasa: 'Nasa', monospace;
 
 }
 
@@ -12,4 +19,6 @@
 }
 
 
-/* background for https://unsplash.com/photos/dCgbRAQmTQA */
+
+
+/* background from https://unsplash.com/photos/dCgbRAQmTQA */
