@@ -10,6 +10,8 @@
     --ff-roboto: 'Roboto Mono', Helvetica, sans-serif;
     --ff-nasa: 'Nasa', monospace;
 
+    font-size: 16px;
+
 }
 
 * {
@@ -18,8 +20,57 @@
     padding: 0;
 }
 
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+aside, main {
+    border: 1px solid red;
+}
+
+aside {
+    background-image: url(./images/background_rocket_launch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+aside > .banner {
+    height: 100px;
+    width: 100%;
+    margin-top: 35vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner-text {
+    font-family: var(--ff-nasa);
+    font-size: 1.2rem;
+    color: lightgray;
+    margin-left: 15px;
+    
+}
+
 .banner-logo {
-    width: 200px;
+    height: 3rem;
+}
+
+aside > .credit {
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+aside > .credit > a {
+    color: #000;
 }
 
 
