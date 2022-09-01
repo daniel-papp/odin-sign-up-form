@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 @font-face {
     font-family: 'Nasa';
@@ -7,7 +7,7 @@
 }
 
 :root {
-    --ff-roboto: 'Roboto Mono', Helvetica, sans-serif;
+    --ff-roboto: 'Roboto', Helvetica, sans-serif;
     --ff-nasa: 'Nasa', monospace;
 
     font-size: 16px;
@@ -73,6 +73,43 @@ aside > .credit > a {
     color: #000;
 }
 
+main {
+    display: grid;
+    grid-template-rows: 2fr 3fr 2fr;
+    background-color: #e2e2e2;
+    font-family: var(--ff-roboto);
+}
+
+main > div {
+    padding-left: 30px;
+    padding-right: 100px;
+}
+
+.upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-weight: 500;
+}
+
+.upper p:last-child {
+    margin: 25px 50px 25px 0;
+}
+
+.mid {
+    background-color: white;
+    padding: 25px 30px;
+}
+
+form h2 {
+    font-size: 1.3rem;
+}
+
+label {
+    display: block;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+}
 
 
 
