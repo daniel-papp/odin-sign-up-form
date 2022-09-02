@@ -9,6 +9,11 @@
 :root {
     --ff-roboto: 'Roboto', Helvetica, sans-serif;
     --ff-nasa: 'Nasa', monospace;
+    --clr-primary: rgb(255, 0, 0);
+    --clr-white: #ffffff;
+    --clr-grey: #e2e2e2;
+    --clr-darkgrey: #969696;
+
 
     font-size: 16px;
 
@@ -48,7 +53,7 @@ aside > .banner {
 .banner-text {
     font-family: var(--ff-nasa);
     font-size: 1.4rem;
-    color: lightgray;
+    color: var(--clr-grey);
     width: 150px;
     text-align: center;
     
@@ -74,7 +79,7 @@ aside > .credit > a {
 main {
     display: grid;
     grid-template-rows: 2fr auto 2fr;
-    background-color: #e2e2e2;
+    background-color: var(--clr-grey);
     font-family: var(--ff-roboto);
 }
 
@@ -99,16 +104,18 @@ main > div {
 }
 
 .mid {
-    background-color: white;
+    background-color: var(--clr-white);
     padding: 25px 0 25px 30px;
+    box-shadow: 0px 2px 10px -5px #000000;
 }
 
 form {
     max-width: 600px;
 }
 
-form h2 {
-    font-size: 1.3rem;
+.mid h2 {
+    font-size: 1.2rem;
+    margin-left: 7px;
 }
 
 form ul {
@@ -124,15 +131,25 @@ form li {
 }
 
 label {
-    /* display: block; */
+    display: inline-block;
     font-size: 0.6rem;
     text-transform: uppercase;
+    min-width: 100px;
 }
 
 form input {
     font-size: 1rem;
+    font-family: var(--ff-roboto);
     max-width: 250px;
-    font: inherit;
+    padding: 3px;
+    border: 1px solid var(--clr-darkgrey);
+    border-radius: 4px;
+    outline: none;
+}
+
+form input:focus {
+    border: 1px solid #000;
+    box-shadow: 3px 3px 10px -5px #000000;
 }
 
 .lower {
@@ -143,8 +160,21 @@ form input {
     padding: 10px 40px;
     border: none;
     border-radius: 5px;
-    background-color: red;
-    color: white;
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    border: 2px solid var(--clr-primary);
+}
+
+.signup-btn:hover,
+.signup-btn:focus {
+    background-color: var(--clr-white);
+    color: var(--clr-primary);
+    outline: none;
+}
+
+.signup-btn:active {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
 }
 
 .lower p {
@@ -153,7 +183,7 @@ form input {
 }
 
 .lower a {
-    color: red;
+    color: var(--clr-primary);
     text-decoration: none;
     font-weight: 500;
 }
