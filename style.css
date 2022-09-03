@@ -134,7 +134,7 @@ label {
     display: inline-block;
     font-size: 0.7rem;
     text-transform: uppercase;
-    min-width: 100px;
+    min-width: 120px;
     padding: 2px;
 }
 
@@ -196,6 +196,21 @@ input + span::after {
     content: "Required";
     left: 160px;
     border-radius: 2px;
+}
+
+.requirements {
+    width: 200px;
+    font-size: 0.7rem;
+    color: red;
+    font-style: italic;
+    margin-top: 2px;
+    transition: 0.5s;
+    overflow: hidden;
+    max-height: 0;
+}
+
+input:invalid:focus:not(:placeholder-shown) ~ .requirements {
+    max-height: 100px;
 }
 
 .lower {
