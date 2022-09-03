@@ -26,30 +26,36 @@
                     <ul>
                         <li>
                             <label for="user_firstname">First Name</label>
-                            <input type="text" name="user_firstname" id="user_firstname" required>
+                            <input type="text" name="user_firstname" id="user_firstname" required placeholder=" ">
+                            <span></span>
                         </li>
                         <li>
                             <label for="user_lastname">Last Name</label>
-                            <input type="text" name="user_lastname" id="user_lastname" required>
+                            <input type="text" name="user_lastname" id="user_lastname" required placeholder=" ">
+                            <span></span>
                         </li>
                         <li>
                             <label for="user_email">E-mail</label>
                             <input type="email" name="user_email" id="user_email" required 
-                                pattern="^[\w\d\.-]+@[a-zA-Z-]+\.[a-zA-Z]+(\.[a-zA-Z]+)?$">
+                                pattern="^[\w\d\.-]+@[a-zA-Z-]+\.[a-zA-Z]+(\.[a-zA-Z]+)?$" placeholder=" ">
+                            <span></span>
                         </li>
                         <li>
                             <label for="user_phone">Phone Number</label>
                             <input type="tel" name="user_phone" id="user_phone" 
-                                pattern="^[+]?[\d]{2}[ -]?[\d]{2}[ -]?[\d]{3}[ -]?[\d]{2}[ -]?[\d]{2}[ -]?$">
+                                pattern="^[+]?[\d]{2}[ -]?[\d]{2}[ -]?[\d]{3}[ -]?[\d]{2}[ -]?[\d]{2}[ -]?$" placeholder=" ">
+                            <span></span>
                         </li>
                         <li>
                             <label for="user_password">Password</label>
                             <input type="password" name="user_password" id="user_password" required
-                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[_.-@#$%^&+=]).*$">
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[_.-@#$%^&+=]).*$" minlength="8" placeholder=" ">
+                            <span></span>
                         </li>
                         <li>
                             <label for="user_confirmpassword">Confirm Password</label>
-                            <input type="password" name="user_confirmpassword" id="user_confirmpassword" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[_.-@#$%^&+=]).*$">
+                            <input type="password" name="user_confirmpassword" id="user_confirmpassword" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[_.-@#$%^&+=]).*$" minlength="8" placeholder=" ">
+                            <span></span>
                         </li>
                     </ul>
                 </form>
