@@ -51,14 +51,14 @@
                         </li>
                         <li>
                             <label for="user_password">Password</label>
-                            <input type="text" name="user_password" id="user_password" required 
+                            <input type="password" name="user_password" id="user_password" required 
                             pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[_.-@#$%^&+=]).*$" minlength="8" placeholder=" ">
                             <span></span>
                             <div class="requirements">Must be at least 8 characters long. Must contain at least one lowercase, one uppercase, one number and one special character.</div>
                         </li>
                         <li>
                             <label for="user_confirmpassword">Confirm Password</label>
-                            <input type="text" name="user_confirmpassword" id="user_confirmpassword" required  minlength="8" placeholder=" ">
+                            <input type="password" name="user_confirmpassword" id="user_confirmpassword" required  minlength="8" placeholder=" ">
                             <span></span>
                             <div class="requirements">Must be the same as the password.</div>
                         </li>
@@ -72,5 +72,3 @@
         </main>
     </body>
 </html>
-
-<!-- pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[_.-@#$%^&+=]).*$" -->
