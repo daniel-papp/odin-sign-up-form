@@ -227,7 +227,7 @@ input:invalid:focus:not(:placeholder-shown) ~ .requirements {
 }
 
 .signup-btn:hover,
-.signup-btn:focus {
+.signup-btn:focus-visible {
     background-color: var(--clr-white);
     color: var(--clr-primary);
     outline: none;
